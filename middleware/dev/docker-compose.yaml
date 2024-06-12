@@ -1,0 +1,33 @@
+version: '3'
+services:
+
+  mysql:
+    image: mysql:8.4.0
+    container_name: mysql
+    environment:
+      - "MYSQL_ROOT_PASSWORD=pFtaF1QF"  # 设置密码
+      - "TZ=Asia/Shanghai"
+    ports:
+      - 6306:3306
+
+  redis_no_persistent:
+    container_name: "redis_no_persistent"
+    image: redis:7.2.5
+    restart: always
+    command: redis-server --requirepass yourpassword
+    ports:
+      - 6379:6379
+
+  openobserve:
+    image: public.ecr.aws/zinclabs/openobserve:latest
+    restart: unless-stopped
+    environment:
+      ZO_ROOT_USER_EMAIL: "google@google.com"
+      ZO_ROOT_USER_PASSWORD: "L12sXy8d"
+    ports:
+      - "5081:5080"
+    volumes:
+      - data:/data
+
+volumes:
+  data:

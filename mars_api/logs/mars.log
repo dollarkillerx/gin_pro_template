@@ -1,0 +1,9 @@
+{"level":"info","caller":"D:/workspace/mars/common/pkg/logs/log.go:30","message":"Logger initialized"}
+{"level":"info","caller":"D:/workspace/mars/mars_api/internal/storage/cache/i18.go:63","message":"I18 cache initialized"}
+{"level":"info","caller":"D:/workspace/mars/common/pkg/logs/log.go:30","message":"Logger initialized"}
+{"level":"info","caller":"D:/workspace/mars/mars_api/internal/storage/cache/i18.go:63","message":"I18 cache initialized"}
+{"level":"info","caller":"D:/workspace/mars/common/pkg/logs/log.go:30","message":"Logger initialized"}
+{"level":"info","caller":"D:/workspace/mars/mars_api/cmd/main.go:61","message":"OpenTelemetry initialized"}
+{"level":"info","caller":"D:/workspace/mars/mars_api/internal/storage/cache/i18.go:63","message":"I18 cache initialized"}
+{"level":"info","caller":"D:/workspace/mars/mars_api/cmd/main.go:75","message":"Storage initialized"}
+{"level":"info","caller":"D:/workspace/mars/mars_api/cmd/main.go:79","message":"Verification service initialized"}

@@ -1,0 +1,30 @@
+[ServiceConfiguration]
+Port="8081"
+
+[PostgresConfiguration]
+Host="127.0.0.1"
+Port=5432
+User="root"
+Password="root"
+DBName="mars"
+
+[RedisConfiguration]
+Addr="127.0.0.1:6379"
+Db=0
+Password="yourpassword"
+
+[LoggerConfiguration]
+Filename="logs/mars.log"
+Level="debug"
+
+[OpenTelemetryConfiguration]
+    [OpenTelemetryConfiguration.Traces]
+        HTTPEndpoint = "127.0.0.1:5081"
+        Path="/api/default/traces"
+        Authorization = "Basic Z29vZ2xlQGdvb2dsZS5jb206dHVxcnFNSDhXWnNUbjJLbQ=="
+
+    [OpenTelemetryConfiguration.Logs]
+        HTTPEndpoint = "http://127.0.0.1:5081/api/default/api_server/_json"
+        User="google@google.com"
+        Password="tuqrqMH8WZsTn2Km"
+        File="logs/mars.log"
